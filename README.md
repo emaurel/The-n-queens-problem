@@ -23,3 +23,7 @@ returns :
  1  0  0  0 
  0  0  1  0 
 ```
+
+Edge cases
+-------
+The program works well for chessboard up to 10*10, putting higher numbers will significantly increase the computing time.
