@@ -5,17 +5,17 @@
 ** pour observer les dames
 */
 
-#include <stdio.h>
+#include "echiquier.h"
 
 void print_line(int size, int *queen, int pos)
 {
     for (int i = 0; i < size; i++) {
         if (queen[i] == pos) {
-            printf(" 1 ");
+            write(1, " 1 ", 3);
         } else
-            printf(" 0 ");
+            write(1, " 0 ", 3);
     }
-    printf("\n");
+    write(1, "\n", 1);
 }
 
 void print_matrice(int size, int *queen)
@@ -24,17 +24,5 @@ void print_matrice(int size, int *queen)
         print_line(size, queen, pos);
     }
     printf("\n");
-    
-}
-
-
-
-
-
-void echiquier(int size, int *queen)
-{
-    
-    print_matrice(size, queen);    
-
     
 }
