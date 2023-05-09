@@ -9,7 +9,7 @@ Example
 -------
 
 ```shell
- make && ./n_queens_solutions 4
+ make ; ./n_queens_solutions 4
 ```
 returns :
 ```
